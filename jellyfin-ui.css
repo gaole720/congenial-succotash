@@ -1,4 +1,9 @@
 
+/*logo*/
+.adminDrawerLogo img { content: url(https://jellyfin.org/images/logo.svg) !important; } 
+imgLogoIcon { content: url(https://jellyfin.org/images/logo.svg) !important; }
+ .pageTitleWithLogo { background-image: url(https://jellyfin.org/images/logo.svg) !important; }
+
 :root {
 
 /*整体颜色*/
