@@ -1,0 +1,195 @@
+:root {
+
+/*整体颜色*/
+  --secondary-color: linear-gradient(to right, rgba(0,0,0,1), rgba(0, 0, 0, 0.5));
+  --header-color: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(67, 67, 67, 0.0));
+  --selected-color: linear-gradient(to right, #63ADF3, #b31217);
+  --hover-color: linear-gradient(to right, #63ADF3, #b31217);
+  --default-text-color: #E8E8E8;
+  --secondary-text-color: #63ADF3
+}
+
+:root {
+    --swiper-theme-color: var(--selected-color);
+}
+
+/*透明菜单*/
+.skinHeader,
+html, 
+.emby-tab-button,
+.paper-icon-button-light:hover:not(:disabled),
+.button-submit:focus,
+.checkboxListLabel, 
+.inputLabel, 
+.inputLabelUnfocused, 
+.paperListLabel, 
+.textareaLabelUnfocused,
+.cardText-secondary, 
+.fieldDescription, 
+.guide-programNameCaret, 
+.listItem,
+.secondary, 
+.nowPlayingBarSecondaryText, 
+.programSecondaryTitle, 
+.secondaryText,
+div[data-role="controlgroup"] a.ui-btn-active
+{color: var(--default-text-color) !important;}
+
+.button-link, 
+.emby-tab-button-active, 
+.emby-tab-button.show-focus:focus, 
+.emby-tab-button:hover,
+.mdl-slider,
+.inputLabelFocused, 
+.selectLabelFocused, 
+.textareaLabelFocused,
+.textActionButton:hover,
+.textareaLabelfocused
+{color: var(--secondary-text-color) !important;}
+
+.textActionButton:hover 
+{text-decoration: none;}
+
+.emby-input:focus, .emby-textarea:focus,
+.emby-checkbox:checked + span + .checkboxOutline,
+.emby-checkbox:focus:not(:checked) + span + .checkboxOutline
+{border-color: var(--selected-color);}
+
+.actionSheetMenuItem:hover,
+
+.raised.emby-button:hover, 
+.navMenuOption-selected,
+.paper-icon-button-light:hover:not(:disabled),
+.button-submit:focus,
+.fullSyncIndicator, 
+.emby-checkbox:checked + span + .checkboxOutline, 
+.itemProgressBarForeground,
+div[data-role="controlgroup"] a.ui-btn-active
+{
+  background: var(--selected-color) !important;
+}
+
+.navMenuOption.emby-button:hover, 
+.navMenuOption:hover
+{
+ transform: scale(1.1);
+ background: rgba(0,0,0,0);
+}
+
+.mainDrawer, 
+.emby-input, 
+.emby-textarea, 
+.emby-select, 
+.navMenuOption-selected, 
+.paperList, 
+.detailRibbon,
+.collapseContent, 
+.formDialogFooter:not(.formDialogFooter-clear), 
+.formDialogHeader:not(.formDialogHeader-clear), 
+.paperList, 
+.visualCardBox,
+.fab, 
+.raised,
+.cardBox, 
+.cardBox-bottompadded,
+.dialog, 
+.nowPlayingContextMenu, 
+.nowPlayingPlaylist
+{ background: var(--secondary-color);}
+
+/*胶片噪点,背景模糊.亮度降低*/  
+ .backgroundContainer.withBackdrop {url(https://gitee.com/lxsol/jellyfin-skin/raw/master/image/bz.jpg)
+    background: url(https://gitee.com/lxsol/jellyfin-skin/raw/master/image/bz.jpg);
+    filter:opacity(0.5);
+    //background-color: rgba(0, 0, 0, .5);
+}
+ 
+.backdropContainer {
+    
+    -webkit-backface-visibility: visible;
+    -webkit-perspective: 1000;
+    -webkit-transform: translate3d(0,0,0);
+    -webkit-transform: translateZ(0);
+    backface-visibility: visible;
+    perspective: 1000;
+    transform: translate3d(0,0,0);
+    transform: translateZ(0);
+    -webkit-filter: blur(20px) brightness(90%) !important;
+    -moz-filter: blur(20px) brightness(90%) !important;
+    -o-filter: blur(20px) brightness(90%) !important;
+    -ms-filter: blur(20px) brightness(90%) !important;
+    filter: blur(20px) brightness(90%) !important;
+}
+
+ 
+ 
+/*透明角标*/
+.countIndicator, .fullSyncIndicator {background: #00000058; /*border: 1px solid white;*/}
+ 
+.playedIndicator {background: #00000058;}
+ 
+/*透明顶栏*/
+.skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred {background:none; background-color:rgba(0, 0, 0, .3);}
+.skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred.noHomeButtonHeader {background:none; background-color:rgba(0, 0, 0, .3);}
+
+
+/* 关闭carousel库 */
+@media all and (min-width: 50em) {
+  .homePage .emby-scroller {
+    margin-right: 0;
+  }
+  .homePage .emby-scrollbuttons {
+    display: none;
+  }
+  .homePage .itemsContainer {
+    flex-wrap: wrap;
+  }
+}
+
+
+.cardContent-button,
+.cardContent-shadow,
+.itemDetailImage,
+.cardOverlayButton-hover,
+.cardOverlayContainer,
+.cardImageContainer,
+.cardPadder,
+.listItemImage,
+.listItemImageButton,
+.listItemButton,
+.headerButton,
+.paper-icon-button-light,
+.innerCardFooter,
+.blurhash-canvas,
+.actionSheetMenuItem:hover,
+.dialog,
+.fab, .raised,
+.cardBox, .cardBox-bottompadded,
+.paperList
+{
+    border-radius: 10px !important;
+}
+
+.itemProgressBarForeground
+{
+	box-shadow: 0 0 5px 1px var(--selected-color);
+}
+
+
+.dialog,
+.cardBox, 
+.cardBox-bottompadded
+.skinHeader
+{
+	box-shadow: 0 0 5px 1px black;
+}
+
+.itemsContainer.scrollSlider.focuscontainer-x.animatedScrollX
+{
+	padding-left: 10px;
+}
+
+.cardText
+{
+	padding:.3em 0.5em;
+}
